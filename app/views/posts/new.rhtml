@@ -1,0 +1,6 @@
+<%form_for @post, :url=>{:action=>"create"} do |f|%>
+        Title: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%=f.text_field :title%> </br>
+        Description : <%= f.text_area :description, :size=>"40X4" %> </br>
+        <%= f.submit "Press"%>
+<%end%>
+
